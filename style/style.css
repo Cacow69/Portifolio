@@ -135,7 +135,7 @@ p > span{
     position: fixed;
     z-index: 1000;
     width: 100%;
-    background-color: var(--marrom);
+    /* background-color: var(--marrom); */
   }
   
 .logo {
@@ -201,7 +201,7 @@ p > span{
 .container{
     display: grid;
     /* grid-template-columns: 10% auto; */
-    background-color: var(--branco);
+    background-color: var(--marrom);
     height: auto;
 }
 
@@ -359,6 +359,12 @@ p > span{
 
 #invisivel{
     color: #dfdfd9;
+}
+
+#navbar.scrolled{
+    background-color: #3a2b26;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+    backdrop-filter: blur(5px);
 }
 /* FIM */
 

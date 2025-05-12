@@ -4,50 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Cauã Cursino ADS</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./assets/style/principal.css">
+    <link rel="stylesheet" href="./assets/style/carrossel.css">
+    <link rel="stylesheet" href="./assets/style/id.css">
+    <link rel="stylesheet" href="./assets/style/classes.css">
+    <link rel="stylesheet" href="./assets/style/responsivo.css">
     <script src="https://kit.fontawesome.com/d2f6cb8d4c.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./img/svg/book-solid.svg">
+    <link rel="icon" type="image/x-icon" href="./assets/img/svg/book-solid.svg">
 </head>
 <body>
+    <!-- navbar -->
     <header>
         <nav class="navbar" id="navbar">
             <div class="logo">Porti<span>fólio</span></div>
             <ul class="nav-links">
               <li><a href="#eu"><span class="nav-text">Eu</span><span><i class="fa-solid fa-user nav-icon"></i></span></a></li>
-              <li><a href="#formacoes">Formações</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#habilidades">Habilidades</a></li>
-              <li><a href="#docs">Documentos</a></li>
-              <li><a href="#certificacoes">Certificações</a></li>
-              <li><a href="#contatos">Contatos</a></li>
+              <li><a href="#formacoes"><span class="nav-text">Formações</span><span><i class="fa-solid fa-book nav-icon"></i></span></a></li>
+              <li><a href="#projetos"><span class="nav-text">Projetos</span><span><i class="fa-solid fa-diagram-project nav-icon"></i></span></a></li>
+              <li><a href="#habilidades"><span class="nav-text">Habilidades</span><span><i class="fa-solid fa-brain nav-icon"></i></span></a></li>
+              <li><a href="#docs"><span class="nav-text">Documentos</span><span><i class="fa-solid fa-folder nav-icon"></i></span></a></li>
+              <li><a href="#certificacoes"><span class="nav-text">Certificações</span><span><i class="fa-solid fa-award nav-icon"></i></span></a></li>
             </ul>
         </nav>
 
-        <script>
-            window.addEventListener("scroll", function () {
-                const navbar = document.getElementById("navbar");
-                if (window.scrollY > 0) {
-                navbar.classList.add("scrolled");
-                } else {
-                navbar.classList.remove("scrolled");
-                }
-            });
-        </script>
+        <script src="./assets/scripts/header.js"></script>   
+
     </header>
 
     <div class="container">
         <main>
-            
+            <!-- parte inicial -->
             <div class="inicio">
                 <div>
-                    <h1 style="text-align: center; margin-top: 20%; font-size: 60px;" id="home">Bem-Vindo ao <br>meu portifólio!</h1>
+                    <h1 style="text-align: center; margin-top: 20%; font-size: 80px;" id="home">Bem-Vindo ao <br>meu portifólio!</h1>
                 </div>
     
                 <div>
-                    <img src="./img/teste.png" style="margin: auto;">
+                    <img src="./assets/img/teste.png" style="margin: auto;">
                 </div>
             </div>
             
+            <!-- quem sou eu -->
             <div class="comeco">
                 <div class="caixa">
                     <h1 id="eu" class="titulo">Quem Sou Eu?</h1>
@@ -67,10 +64,14 @@
                         integrar uma equipe onde possa aplicar meus conhecimentos, resolver desafios e continuar evoluindo 
                         profissionalmente.
                     </p> 
+                    <br>
+                    <br>
+                    <p id="curriculo">Clique <span><a href="./assets/pdf/curriculo.pdf" download="Currículo-Cauã-Cursino.pdf">aqui</a></span> para ter acesso ao meu currículo completo!</p>
                 </div>
             </div>   
         <br>
 
+        <!-- formacoes -->
         <div class="fundo-escuro">
             <br>
             <h1 id="formacoes" class="titulo">Formações</h1>
@@ -79,14 +80,14 @@
             </p>
             <br>
             <div class="forms">
-                <div><img src="./img/svg/cSharp-logo.svg" class="cSharp"><h1>C# (Visual Studio)</h1><p>para aplicações desktop e desenvolvimento de sistemas com interface gráfica.</p></div>            
+                <div><img src="./assets/img/svg/cSharp-logo.svg" class="cSharp"><h1>C# (Visual Studio)</h1><p>para aplicações desktop e desenvolvimento de sistemas com interface gráfica.</p></div>            
                 <div><i class='fab fa-python icon-card'></i><h1>Python</h1><p>Usada para automação, análise de dados e scripts diversos.</p></div>            
                 <div><i class="fa-brands fa-java icon-card"></i><h1>Java</h1><p>para desenvolvimento de aplicativos e lógica de programação.</p></div>            
                 <div><i class="fa-brands fa-php icon-card"></i><h1>PHP</h1><p>para desenvolvimento web e integração com bancos de dados.</p></div>            
                 <div><i class="fa-solid fa-database icon-card"></i><h1>SQL</h1><p>Modelagem, criação e manutenção de bancos de dados relacionais em MySQL e SQL Server.</p></div>            
                 <div><i class="fa-brands fa-js icon-card"></i><h1>JavaScript</h1><p>para interatividade em páginas web.</p></div>            
-                <div><i class="fa-brands fa-html5 icon-card"></i><h1>HTML</h1><p>para criação e estilização de sites responsivos.</p></div>            
-                <div><i class="fa-brands fa-css icon-card"></i><h1>CSS</h1><p> </p></div>            
+                <div><i class="fa-brands fa-html5 icon-card"></i><h1>HTML</h1><p>para criação e organização de sites e sistemas web.</p></div>            
+                <div><i class="fa-brands fa-css icon-card"></i><h1>CSS</h1><p>para a estilização e personalização de sites</p></div>            
             </div>
 
             <p id="invisivel">
@@ -95,6 +96,7 @@
         </div>
 
         <div>
+            <!-- projetos e carrossel -->
             <br>
             <h1 id="projetos" class="titulo">Projetos</h1>
             <p style="text-align: center;">Aqui estão alguns do projetos que trabalhei! Alguns são para fins acadêmicos e outros pessoais.</p>
@@ -111,7 +113,7 @@
                             <li class="carousel__slide">
                                 <figure>
                                     <div>
-                                        <img src="./img/tresGoblins.png" alt="" style="width: 750px; height: 450px;">
+                                        <img src="./assets/img/tresGoblins.png" alt="" style="width: 750px; height: 450px;">
                                     </div>
                                     <figcaption>
                                         <h1 style="text-align: left;">Três Goblins</h1>
@@ -124,7 +126,7 @@
                             <li class="carousel__slide">
                                 <figure>
                                     <div>
-                                        <img src="./img/sama.png" alt="" style="width: 750px; height: 450px;">
+                                        <img src="./assets/img/sama.png" alt="" style="width: 750px; height: 450px;">
                                     </div>
                                     <figcaption>
                                         <h1 style="text-align: left;">SAMA</h1>
@@ -137,7 +139,7 @@
                             <li class="carousel__slide">
                                 <figure>
                                     <div>
-                                        <img src="./img/theGameAwards.png" alt="" style="width: 750px; height: 450px;">
+                                        <img src="./assets/img/theGameAwards.png" alt="" style="width: 750px; height: 450px;">
                                     </div>
                                     <figcaption>
                                         <h1 style="text-align: left;">The Game Awards</h1>
@@ -149,7 +151,7 @@
                             <li class="carousel__slide">
                                 <figure>
                                     <div>
-                                        <img src="./img/calculadora.png" alt="" style="width: 750px; height: 450px;">
+                                        <img src="./assets/img/calculadora.png" alt="" style="width: 750px; height: 450px;">
                                     </div>
                                     <figcaption>
                                         <h1 style="text-align: left;">Calculadora</h1>
@@ -161,7 +163,7 @@
                             <li class="carousel__slide">
                                 <figure>
                                     <div>
-                                        <img src="./img/media.png" alt="" style="width: 750px; height: 450px;">
+                                        <img src="./assets/img/media.png" alt="" style="width: 750px; height: 450px;">
                                     </div>
                                     <figcaption>
                                         <h1 style="text-align: left;">Calculadora de Média</h1>
@@ -173,7 +175,7 @@
                             <li class="carousel__slide">
                                 <figure>
                                     <div>
-                                        <img src="./img/conversor.png" alt="" style="width: 750px; height: 450px;">
+                                        <img src="./assets/img/conversor.png" alt="" style="width: 750px; height: 450px;">
                                     </div>
                                     <figcaption>
                                         <h1 style="text-align: left;">Conversor MP4</h1>
@@ -210,37 +212,87 @@
         </div>
         <br>
 
-
+        <!-- habilidades -->
         <div class="hab">
             <div class="hab-titulo">Habilidades</div>
-            <figure><img src="./img/teste.png" style="margin: auto;"></figure>
-            <div class="item2"><div class="hab-card">2</div></div>
-            <div class="item2"><div class="hab-card">3</div></div>
+            <figure><img src="./assets/img/teste.png" style="margin: auto;"></figure>
+            <div class="item2">
+                <div class="hab-card">
+                    <h2>Soft Skills</h2>
+                    <br>
+                    <p>Liderança</p>
+                    <p>Adaptabilidade</p>
+                    <p>Flexibilidade</p>
+                    <p>Criatividade</p>
+                    <p>Empatia</p>
+                    <p>Trabalho em equipe</p>
+                </div>
+            </div>
+
+            <div class="item2">
+                <div class="hab-card">
+                    <h2>Hard Skills</h2>
+                    <br>
+                    <p>Habilidade de escrita</p>
+                    <p>Pacote Office</p>
+                    <p>Criação de protótipos</p>
+                    <p>Linguagens como HTML, <br>Python e Sql</p>
+                    <p>Empatia</p>
+                    <p>Língua inglesa</p>
+                </div>
+            </div>
         </div>
 
-
-
-
-
+        <!-- docs -->
         <br>
         <h1 id="docs">Documentos e Trabalhos</h1>
-        <p>
-            Três Goblins
-            jun de 2023 - nov de 2024
-            Associado(s) a Colégio Técnico Opção
-            Sistema Web utilizado para criar, armazenar e organizar fichas de personagens para jogadores de RPG (Role Playing Game). O projeto nasceu a partir da reflexão sobre como as fichas de papel, comumente utilizadas pelos jogadores, podem tanto estragar facilmente quanto gerar lixo excessivo. Sendo assim, a plataforma é uma alternativa viável e 100% on-line para que os jogadores consigam ver seus personagens de forma simples e em qualquer lugar!
-            Linguagens utilizadas: HTML, PHP, CSS, SQL e JavaScript
-            Técnologias: Jquery e Ajax
-            
-            Competências: Bootstrap · HTML5 · Aplicativos web · HTML · JavaScript · CSS · Desenvolvimento web · Banco de dados · Relacionamentos interpessoais
-        </p>
+        <div class="trabalhos">
+            <article class="trabalho-item">
+                <h2>Três Goblins</h2>
+                <span>Jun de 2023 - Nov de 2024</span>
+                <h3>Descrição</h3>
+                <p>Sistema Web utilizado para criar, armazenar e organizar fichas de personagens para jogadores de RPG (Role Playing Game). 
+                O projeto nasceu a partir da reflexão sobre como as fichas de papel, comumente utilizadas pelos jogadores, podem tanto estragar facilmente quanto gerar lixo excessivo. Sendo assim, a plataforma é uma alternativa viável e 100% on-line para que os jogadores consigam ver seus personagens de forma simples e em qualquer lugar!
+                Linguagens utilizadas: HTML, PHP, CSS, SQL e JavaScript
+                Técnologias: Jquery e Ajax
+                </p>
+            </article>
+        </div>
         <br>
-        <h1 id="certificacoes" class="titulo">Certificações</h1>
+
+        <!-- certificacoes -->
+         <div class="fundo-escuro">
+            <h1 id="certificacoes" class="titulo" style="padding: 40px;">Certificações</h1>
+            <article class="art-cert">
+                <figure><img src="./assets/img/certificado1.jpg"></figure>
+                <p>Certificado de nota 1000 na redação do simulado ENEM</p>
+            </article>
+            <br>
+
+            <article class="art-cert">
+                <figure><img src="./assets/img/certificado2.jpg"></figure>
+                <p>Certificado de projeto de interface gráfica com Python</p>
+            </article>
+        </div>
         </main>
     </div>
 
+        <!-- footer -->
         <footer>
-            <figure><img src="./img/teste.png" id="img-footer"></figure>
+            <figure><img src="./assets/img/teste.png" id="img-footer"></figure>
+            
+            <div id="contatos">
+                <a href="https://www.linkedin.com/in/cauã-cursino-748485235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/caua_mehiel.rpz?igsh=MWJqeWIxZThwbjl2cQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://github.com/Cacow69?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://wa.me/5512997750587?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
+            <div>
+                <article>
+                    <span>E-mail: cmfcursino@gmail.com</span><br>
+                    <span>Telefone: +55 12 99775-0587</span>
+                </article>
+            </div>
         </footer>
 
 </body>

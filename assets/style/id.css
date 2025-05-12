@@ -1,0 +1,57 @@
+/* Estilização por ID */
+#home{
+    color: var(--branco);
+}
+
+#curriculo{
+    text-align: center;
+}
+
+#curriculo a{
+    color: var(--laranja);
+}
+
+
+#img-footer{
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 2px solid #BBA58F; 
+    filter: drop-shadow(0 0 10px black);
+}
+
+#invisivel{
+    color: #dfdfd9;
+}
+
+#navbar.scrolled{
+    background-color: #3a2b26;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+
+#contatos{
+    height: 80px;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contatos a i{
+    font-size: 80px;
+    color: var(--branco);
+    margin-right: 50px;
+}
+
+#contatos a i:hover{
+    color: var(--laranja);
+}
+
+#contatos > article{
+    text-align: left;
+    left: 0;
+}
+/* FIM */

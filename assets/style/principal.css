@@ -11,6 +11,22 @@
 }
 /* FIM */
 
+/*ScrollBar*/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--azul);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--laranja); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--amarelo); 
+}
+/*FIM*/
+
 /*Fonte personalizada*/
 @font-face {
     font-family: "MinhaFonte";

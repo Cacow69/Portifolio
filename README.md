@@ -1,5 +1,5 @@
 # **Portifólio - Cauã Cursino**
-<img src="./assetes/imglogo.jpeg" alt="logo">
+<img src="./assets/img/logo.jpeg" alt="logo">
 <hr>
 
 <br>

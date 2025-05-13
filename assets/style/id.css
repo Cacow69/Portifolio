@@ -3,14 +3,6 @@
     color: var(--branco);
 }
 
-#curriculo{
-    text-align: center;
-}
-
-#curriculo a{
-    color: var(--laranja);
-}
-
 
 #img-footer{
     width: 150px; 

@@ -280,4 +280,12 @@
 .art-cert{
     text-align: center;
 }
+
+.curriculo{
+    text-align: center;
+}
+
+.curriculo a{
+    color: var(--laranja);
+}
 /* FIM */

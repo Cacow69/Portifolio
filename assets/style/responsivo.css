@@ -1,36 +1,10 @@
 
 /* RESPONSIVIDADE PARA CELULARES */
 @media (max-width: 768px) {
+    body{
+       background: linear-gradient(to bottom, var(--marrom) 50%, var(--azul) 50%);
+    }
 
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px 20px;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
-      margin-right: 0;
-      width: 100%;
-    }
-  
-    .nav-links li {
-      float: none;
-      width: 100%;
-    }
-  
-    .nav-links li a {
-      width: 100%;
-      text-align: left;
-      padding-left: 10px;
-    }
-  
-    .inicio {
-      grid-template-columns: 1fr;
-      padding: 10px;
-    }
-  
     .forms {
       flex-direction: column;
       align-items: center;
@@ -65,19 +39,25 @@
     }
   
     .hab {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
   
     .hab-titulo {
       grid-column: auto;
       font-size: 30px;
     }
-  
-    footer {
-      grid-template-columns: 1fr;
-      text-align: center;
+
+    .hab-card{
+      width: 300px;
+      height: 500px;
     }
   
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 125px;
+    }
+
     #img-footer {
       margin: auto;
       display: block;

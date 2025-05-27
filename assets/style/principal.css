@@ -92,6 +92,11 @@
 
 html{
     scroll-behavior: smooth;
+    cursor: url('../cursor.cur') 4 4, auto;
+}
+
+a{
+    cursor: url('../clique.cur') 4 4, auto;
 }
 
 body {

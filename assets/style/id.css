@@ -10,6 +10,12 @@
     border-radius: 50%; 
     border: 2px solid #BBA58F; 
     filter: drop-shadow(0 0 10px black);
+    transition: transform 0.6s ease;
+}
+
+#img-footer:hover{
+    transform: rotate(60deg);
+    transition: 0.6s;
 }
 
 #invisivel{
@@ -36,10 +42,13 @@
     font-size: 80px;
     color: var(--branco);
     margin-right: 50px;
+    transition: transform 0.3s ease;
 }
 
 #contatos a i:hover{
     color: var(--laranja);
+    transform: translateY(-5px);
+    transition: 0.6s;
 }
 
 #contatos > article{
